@@ -9,12 +9,14 @@
     <body>
         <p>Zoom Login Successful...</p>
         <!--<a href="com.penguinstech.zoommeetingapp://penguinstech.com/?code=1234">sdfsd</a>-->
+	    <p id="code"></p>
         <a id="link" href="intent://penguinstech.com/?code=1234#Intent;scheme=com.penguinstech.zoommeetingapp;package=com.penguinstech.zoommeetingapp;end">Continue to App</a>
     </body>
     <script>
         // window.location.replace("com.penguinstech.zoommeetingapp://12345")
         var url = new URL(window.location);
         var code = url.searchParams.get("code");
+	document.getElementById('code').innerHTML = code;
         var url = "intent://penguinstech.com/?code="+code+"#Intent;scheme=com.penguinstech.zoommeetingapp;package=com.penguinstech.zoommeetingapp;end"
         document.getElementById('link').href = url
         // document.getElementById('link').click()
