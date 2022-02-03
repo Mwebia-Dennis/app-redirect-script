@@ -16,8 +16,9 @@
         // window.location.replace("com.penguinstech.zoommeetingapp://12345")
         var url = new URL(window.location);
         var code = url.searchParams.get("code");
+	var state = url.searchParams.get("state");
 	document.getElementById('code').innerHTML = code;
-        var url = "intent://penguinstech.com/?code="+code+"#Intent;scheme=com.penguinstech.zoommeetingapp;package=com.penguinstech.zoommeetingapp;end"
+        var url = "intent://penguinstech.com/?code="+code+"&state="+state+"#Intent;scheme=com.penguinstech.zoommeetingapp;package=com.penguinstech.zoommeetingapp;end"
         document.getElementById('link').href = url
         // document.getElementById('link').click()
 
