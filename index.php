@@ -18,7 +18,7 @@
         var code = url.searchParams.get("code");
 	var state = url.searchParams.get("state");
 	document.getElementById('code').innerHTML = code;
-        var url = "intent://penguinstech.com/?code="+code+"&state="+state+"#Intent;scheme=com.penguinstech.zoommeetingapp;package=com.penguinstech.zoommeetingapp;end"
+        var url = "intent://penguinstech.com/?code="+code+"&state="+state+"#Intent;scheme=com.penguinstech.penguinsmeetingapp;package=com.penguinstech.penguinsmeetingapp;end"
         document.getElementById('link').href = url
         // document.getElementById('link').click()
 
